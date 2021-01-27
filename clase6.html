@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6</title>
+    <style>
+        #previa {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 70px 5px;
+
+
+        }
+
+        #cajita {
+            width: 200px;
+            height: 200px;
+            border: 5px dashed violet;
+            border-radius: 10px;
+            background: turquoise;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        #caja1,
+        #caja2,
+        #caja3 {
+            width: 100px;
+            height: 60px;
+            border: 1px solid black;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clase 6</h1>
+    <!-- 
+        EJEMPLO 1
+        <form>
+        <input type="text">
+        <input type="text">
+        <input type="file" >
+        <input type="submit" value="Enviar">
+    </form> -->
+    <!-- 
+        EJEMPLO 2
+        <form action="" enctype="multipart/form-data" name="formu">
+        <input type="text" name="nombre" id="">
+        <input type="text" name="edad" id="">
+        <input type="file" name="archivo" id="">
+        <button>Enviar</button>
+    </form> -->
+
+    <!-- 
+        EJEMPLO 3
+        <video controls width="20%" id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta HTML5 video
+    </video> -->
+    <!-- 
+        EJEMPLO 4
+        <progress max="100"></progress> -->
+    <!-- 
+        EJEMPLO 5
+        <p>Seleccionar imagen</p>
+    <input type="file" name="" id="">
+    <img src="" id="previa"> -->
+
+    <!-- 
+        EJEMPLO 6
+        <p>Arrastra una imagen en la siguiente zona:</p>
+    <div id="cajita">
+
+    </div> -->
+    <p>Tareas para administrar proyectos</p>
+    <div id="caja1" ondrop="drop(event)" ondragover="permitirDrop(event)">
+        <img src="caja2.png" style="width:100%;height:100%;" draggable="true" ondragstart="drag(event)" id="drag1">
+    </div>
+    <div id="caja2" ondrop="drop(event)" ondragover="permitirDrop(event)"></div>
+    <div id="caja3" ondrop="drop(event)" ondragover="permitirDrop(event)"></div>
+    <script src="clase6.js"></script>
+</body>
+
+</html>
